@@ -7,6 +7,7 @@ update:
 	go install gotest.tools/gotestsum@latest
 	for ELEMENT in $$(go list -f "{{if not (or .Main .Indirect)}}{{.Path}}{{end}}" -m all); do echo $${ELEMENT}; go get $${ELEMENT}; done
 	go get github.com/docker/docker@v24.0.9
+	go get github.com/containers/common@v0.56.0
 	#go get github.com/containers/podman/v4@v4.7.2
 	go mod tidy
 
