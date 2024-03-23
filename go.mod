@@ -4,7 +4,7 @@ go 1.21.7
 
 require (
 	github.com/containers/common v0.58.0
-	github.com/containers/podman/v4 v4.9.3
+	github.com/containers/podman/v4 v4.8.3
 	github.com/docker/docker v26.0.0+incompatible
 	github.com/funtimecoding/go-library v0.8.72
 	golang.org/x/exp v0.0.0-20240318143956-a85f2c67cd81
