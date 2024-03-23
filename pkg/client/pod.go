@@ -1,8 +1,8 @@
 package client
 
 import (
-	"github.com/containers/podman/v4/pkg/bindings/pods"
-	"github.com/containers/podman/v4/pkg/domain/entities"
+	"github.com/containers/podman/v5/pkg/bindings/pods"
+	"github.com/containers/podman/v5/pkg/domain/entities"
 	"github.com/funtimecoding/go-library/pkg/errors"
 )
 

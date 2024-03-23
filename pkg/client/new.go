@@ -2,7 +2,7 @@ package client
 
 import (
 	"context"
-	"github.com/containers/podman/v4/pkg/bindings"
+	"github.com/containers/podman/v5/pkg/bindings"
 	"github.com/funtimecoding/go-library/pkg/errors"
 	"github.com/funtimecoding/go-podman/pkg/command"
 )
