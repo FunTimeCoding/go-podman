@@ -4,7 +4,7 @@ go 1.21.7
 
 require (
 	github.com/containers/common v0.58.0
-	github.com/containers/podman/v4 v4.8.3
+	github.com/containers/podman/v4 v4.7.2
 	github.com/docker/docker v26.0.0+incompatible
 	github.com/funtimecoding/go-library v0.8.72
 	golang.org/x/exp v0.0.0-20240318143956-a85f2c67cd81
@@ -91,7 +91,6 @@ require (
 	github.com/moby/term v0.5.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
-	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/nxadm/tail v1.4.11 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
