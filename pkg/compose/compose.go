@@ -5,6 +5,7 @@ import (
 	"github.com/funtimecoding/go-podman/pkg/container"
 )
 
-func New(c ...*container.Container) *Compose {
-	return &Compose{podman: client.New(), containers: c}
+type Compose struct {
+	podman     *client.Client
+	containers []*container.Container
 }

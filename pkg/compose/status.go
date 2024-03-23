@@ -2,14 +2,14 @@ package compose
 
 import "fmt"
 
-func (t *Tester) Status() {
-	for _, element := range t.podman.Pod() {
+func (c *Compose) Status() {
+	for _, element := range c.podman.Pod() {
 		fmt.Printf("Pod: %+v\n", element)
 	}
 
-	for _, element := range t.podman.Container() {
+	for _, element := range c.podman.Container() {
 		fmt.Printf("Container %s: %+v\n", element.Names[0], element)
-		l := t.podman.Execute(element, "ls")
+		l := c.podman.Execute(element, "ls")
 		output := l.Output.Format()
 
 		if output != "" {

@@ -1,17 +1,17 @@
 package compose
 
-func (t *Tester) Create() {
-	for _, element := range t.containers {
-		if !t.podman.ImageExists(element) {
-			t.podman.Pull(element)
+func (c *Compose) Create() {
+	for _, element := range c.containers {
+		if !c.podman.ImageExists(element) {
+			c.podman.Pull(element)
 		}
 
-		if !t.podman.Exists(element) {
-			t.podman.Create(element)
+		if !c.podman.Exists(element) {
+			c.podman.Create(element)
 		}
 
-		if !t.podman.Running(element) {
-			t.podman.Start(element)
+		if !c.podman.Running(element) {
+			c.podman.Start(element)
 		}
 	}
 }

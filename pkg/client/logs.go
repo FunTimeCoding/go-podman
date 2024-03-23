@@ -1,11 +1,11 @@
-package podman
+package client
 
 import (
 	"context"
 	"github.com/containers/podman/v4/pkg/bindings/containers"
 	"github.com/containers/podman/v4/pkg/domain/entities"
 	"github.com/funtimecoding/go-library/pkg/errors"
-	"github.com/funtimecoding/go-podman/pkg/podman/log"
+	"github.com/funtimecoding/go-podman/pkg/log"
 	"strings"
 )
 

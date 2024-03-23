@@ -1,4 +1,4 @@
-package podman
+package client
 
 const RunningState = "running"
 

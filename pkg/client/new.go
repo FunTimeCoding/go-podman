@@ -1,10 +1,10 @@
-package podman
+package client
 
 import (
 	"context"
 	"github.com/containers/podman/v4/pkg/bindings"
 	"github.com/funtimecoding/go-library/pkg/errors"
-	"github.com/funtimecoding/go-podman/pkg/podman/command"
+	"github.com/funtimecoding/go-podman/pkg/command"
 )
 
 func New() *Client {

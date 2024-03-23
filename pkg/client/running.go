@@ -1,7 +1,7 @@
-package podman
+package client
 
 import (
-	"github.com/funtimecoding/go-podman/pkg/podman/container"
+	"github.com/funtimecoding/go-podman/pkg/container"
 	"golang.org/x/exp/slices"
 )
 

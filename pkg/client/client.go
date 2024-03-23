@@ -1,4 +1,4 @@
-package podman
+package client
 
 import "context"
 

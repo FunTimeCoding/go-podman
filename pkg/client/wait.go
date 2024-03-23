@@ -1,4 +1,4 @@
-package podman
+package client
 
 import (
 	"github.com/containers/podman/v4/pkg/bindings/containers"

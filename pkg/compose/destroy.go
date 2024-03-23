@@ -1,15 +1,15 @@
 package compose
 
-func (t *Tester) Destroy() {
-	for _, element := range t.containers {
-		if !t.podman.Exists(element) {
+func (c *Compose) Destroy() {
+	for _, element := range c.containers {
+		if !c.podman.Exists(element) {
 			return
 		}
 
-		if t.podman.Running(element) {
-			t.podman.Stop(element)
+		if c.podman.Running(element) {
+			c.podman.Stop(element)
 		}
 
-		t.podman.Remove(element)
+		c.podman.Remove(element)
 	}
 }

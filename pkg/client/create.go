@@ -1,4 +1,4 @@
-package podman
+package client
 
 import (
 	"github.com/containers/common/libnetwork/types"
@@ -6,7 +6,7 @@ import (
 	"github.com/containers/podman/v4/pkg/domain/entities"
 	"github.com/containers/podman/v4/pkg/specgen"
 	"github.com/funtimecoding/go-library/pkg/errors"
-	"github.com/funtimecoding/go-podman/pkg/podman/container"
+	"github.com/funtimecoding/go-podman/pkg/container"
 )
 
 func (c *Client) Create(

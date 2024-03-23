@@ -2,10 +2,10 @@ package compose
 
 import "fmt"
 
-func (t *Tester) Log() {
-	for _, element := range t.podman.Container() {
+func (c *Compose) Log() {
+	for _, element := range c.podman.Container() {
 		fmt.Printf("Container: %s\n", element.Names[0])
-		l := t.podman.Logs(element)
+		l := c.podman.Logs(element)
 		output := l.Output.Format()
 
 		if output != "" {
