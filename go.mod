@@ -1,12 +1,12 @@
 module github.com/funtimecoding/go-podman
 
-go 1.22.2
+go 1.22.3
 
 require (
 	github.com/containers/common v0.58.0
 	github.com/containers/podman/v5 v5.0.0
 	github.com/docker/docker v25.0.3+incompatible
-	github.com/funtimecoding/go-library v0.8.167
+	github.com/funtimecoding/go-library v0.8.168
 	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842
 )
 

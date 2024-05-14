@@ -112,8 +112,8 @@ github.com/frankban/quicktest v1.14.5/go.mod h1:4ptaffx2x8+WTWXmUCuVU6aPUX1/Mz7z
 github.com/fsnotify/fsnotify v1.6.0/go.mod h1:sl3t1tCWJFWoRz9R8WJCbQihKKwmorjAbSClcnxKAGw=
 github.com/fsnotify/fsnotify v1.7.0 h1:8JEhPFa5W2WU7YfeZzPNqzMP6Lwt7L2715Ggo0nosvA=
 github.com/fsnotify/fsnotify v1.7.0/go.mod h1:40Bi/Hjc2AVfZrqy+aj+yEI+/bRxZnMJyTJwOpGvigM=
-github.com/funtimecoding/go-library v0.8.167 h1:aMNpUm9/RTJAWHHZyQZNJo1JSXHlLMMEtutTBjUf8mc=
-github.com/funtimecoding/go-library v0.8.167/go.mod h1:Wr+NGUGoJZPJMeSM+6IxCNnBl6T8m9M2kjgAQhV1dyc=
+github.com/funtimecoding/go-library v0.8.168 h1:EiAqQQzYwZUPFKfe1hkfEo+M3opcSeQ5uYXcEvHxNDc=
+github.com/funtimecoding/go-library v0.8.168/go.mod h1:cDCy3x8csBFdEvPnsCuvQa4+4kt73SilnCfOkNzhtBA=
 github.com/go-jose/go-jose/v3 v3.0.3 h1:fFKWeig/irsp7XD2zBxvnmA/XaRWp5V3CBsZXJF7G7k=
 github.com/go-jose/go-jose/v3 v3.0.3/go.mod h1:5b+7YgP7ZICgJDBdfjZaIt+H/9L9T/YQrVfLAMboGkQ=
 github.com/go-logr/logr v1.2.2/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
