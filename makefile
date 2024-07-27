@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := all
 
-# Source: https://github.com/containers/podman/blob/v5.0.3/Makefile#L51
+# Source: https://github.com/containers/podman/blob/v5.1.2/Makefile#L51
 REMOTE_TAGS ?= remote exclude_graphdriver_btrfs btrfs_noversion exclude_graphdriver_devicemapper containers_image_openpgp
 
 all: test lint
@@ -19,8 +19,7 @@ lint:
 
 update:
 	@goupdate
-	@go get github.com/docker/docker@v25.0.3
-	@go get github.com/containers/common@v0.58.3
+	@go get github.com/docker/docker@v26.1.5
 	@go mod tidy
 
 update-library:

@@ -23,6 +23,7 @@ func Locator() string {
 			"json",
 		),
 		&result,
+		false,
 	)
 
 	return fmt.Sprintf("%s?secure=true", result[0].URI)

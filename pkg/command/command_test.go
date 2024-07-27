@@ -10,7 +10,10 @@ import (
 	"testing"
 )
 
-func replacePort(locator string, port int) string {
+func replacePort(
+	locator string,
+	port int,
+) string {
 	result, parseFail := url.Parse(locator)
 	errors.PanicOnError(parseFail)
 	host, _, splitFail := net.SplitHostPort(result.Host)
@@ -33,6 +36,9 @@ func TestCommand(t *testing.T) {
 	)
 	assert.True(
 		t,
-		strings.HasSuffix(Identity(), ".ssh/podman-machine-default"),
+		strings.HasSuffix(
+			Identity(),
+			".local/share/containers/podman/machine/machine",
+		),
 	)
 }

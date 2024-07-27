@@ -11,6 +11,7 @@ func Identity() string {
 	notation.DecodeStrict(
 		system.Run("podman", "machine", "inspect"),
 		&machines,
+		false,
 	)
 
 	result := machines[0].SSHConfig.IdentityPath
