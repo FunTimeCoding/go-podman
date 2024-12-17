@@ -3,8 +3,8 @@ module github.com/funtimecoding/go-podman
 go 1.23.4
 
 require (
-	github.com/containers/common v0.59.2
-	github.com/containers/podman/v5 v5.1.2
+	github.com/containers/common v0.58.5
+	github.com/containers/podman/v5 v5.1.0-rc1
 	github.com/docker/docker v26.1.5+incompatible
 	github.com/funtimecoding/go-library v0.8.304
 	golang.org/x/exp v0.0.0-20241215155358-4a5509556b9e
@@ -26,7 +26,7 @@ require (
 	github.com/containerd/errdefs v0.3.0 // indirect
 	github.com/containerd/log v0.1.0 // indirect
 	github.com/containerd/stargz-snapshotter/estargz v0.15.1 // indirect
-	github.com/containers/buildah v1.36.0 // indirect
+	github.com/containers/buildah v1.35.4 // indirect
 	github.com/containers/image/v5 v5.31.1 // indirect
 	github.com/containers/libtrust v0.0.0-20230121012942-c1716e8a8d01 // indirect
 	github.com/containers/ocicrypt v1.2.0 // indirect
