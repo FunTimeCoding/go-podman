@@ -19,7 +19,7 @@ lint:
 
 update:
 	@goupdate --downgrade github.com/docker/docker@v26.1.5 \
-    --downgrade github.com/containers/common@v0.58.5
+    --downgrade github.com/containers/common@v0.58.3
 
 update-library:
 	@goupdate --exclusive funtimecoding
