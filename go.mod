@@ -3,7 +3,7 @@ module github.com/funtimecoding/go-podman
 go 1.23.4
 
 require (
-	github.com/containers/common v0.58.5
+	github.com/containers/common v0.58.3
 	github.com/containers/podman/v5 v5.1.0-rc1
 	github.com/docker/docker v26.1.5+incompatible
 	github.com/funtimecoding/go-library v0.8.304
