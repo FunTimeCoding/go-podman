@@ -7,6 +7,6 @@ import (
 
 func TestLog(t *testing.T) {
 	actual := FromStrings("a\nb", "")
-	assert.Any(t, "a\nb", actual.Output.Format())
-	assert.Any(t, "", actual.Error.Format())
+	assert.Any(t, "a\nb", actual.Output.Render())
+	assert.Any(t, "", actual.Error.Render())
 }

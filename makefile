@@ -12,15 +12,13 @@ tool:
 	@GOPROXY=direct go install github.com/funtimecoding/go-library/cmd/goupdate@latest
 
 test:
-	gotestsum --format standard-quiet -- -tags "${REMOTE_TAGS}" ./...
+	@gotestsum --format standard-quiet -- -tags "${REMOTE_TAGS}" ./...
 
 lint:
-	golangci-lint run --build-tags "${REMOTE_TAGS}"
+	@golangci-lint run --build-tags "${REMOTE_TAGS}"
 
 update:
-	@goupdate
-	@go get github.com/docker/docker@v26.1.5
-	@go mod tidy
+	@goupdate --downgrade github.com/docker/docker@v26.1.5
 
 update-library:
 	@goupdate --exclusive funtimecoding
