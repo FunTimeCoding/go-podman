@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/funtimecoding/go-library/pkg/system"
 	"github.com/funtimecoding/go-podman/pkg/compose"
 	"github.com/funtimecoding/go-podman/pkg/container"
 )
