@@ -19,6 +19,4 @@ func main() {
 	c := compose.New(Postgres)
 	c.Create()
 	defer c.Destroy()
-
-	system.Sleep(10)
 }
