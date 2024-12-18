@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := all
 
-# Source: https://github.com/containers/podman/blob/v5.1.2/Makefile#L51
+# Source: https://github.com/containers/podman/blob/v5.1.0-rc1/Makefile#L51
 REMOTE_TAGS ?= remote exclude_graphdriver_btrfs btrfs_noversion exclude_graphdriver_devicemapper containers_image_openpgp
 
 all: test lint
@@ -23,3 +23,6 @@ update:
 
 update-library:
 	@goupdate --exclusive funtimecoding
+
+postgres:
+	@go run -tags "${REMOTE_TAGS}" cmd/example/postgres/main.go
