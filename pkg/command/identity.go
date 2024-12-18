@@ -3,13 +3,14 @@ package command
 import (
 	"github.com/funtimecoding/go-library/pkg/notation"
 	"github.com/funtimecoding/go-library/pkg/system"
+	"github.com/funtimecoding/go-podman/pkg/podman"
 	"strings"
 )
 
 func Identity() string {
 	var machines []Machine
 	notation.DecodeStrict(
-		system.Run("podman", "machine", "inspect"),
+		system.Run(podman.Command, podman.Machine, podman.Inspect),
 		&machines,
 		false,
 	)
