@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := all
 
-# Source: https://github.com/containers/podman/blob/v5.1.0-rc1/Makefile#L51
-REMOTE_TAGS ?= remote exclude_graphdriver_btrfs btrfs_noversion exclude_graphdriver_devicemapper containers_image_openpgp
+# Source: https://github.com/containers/podman/blob/v5.5.0/Makefile#L60
+REMOTE_TAGS ?= remote exclude_graphdriver_btrfs btrfs_noversion containers_image_openpgp
 
 all: lint test
 
@@ -19,8 +19,7 @@ test:
 	@gotestsum --format standard-quiet -- -tags "${REMOTE_TAGS}" ./...
 
 update:
-	@goupdate --downgrade github.com/docker/docker@v26.1.5 \
-    --downgrade github.com/containers/common@v0.58.3
+	@goupdate
 
 update-library:
 	@goupdate --exclusive funtimecoding

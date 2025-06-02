@@ -3,7 +3,7 @@ package client
 import (
 	"github.com/containers/podman/v5/pkg/api/handlers"
 	"github.com/containers/podman/v5/pkg/bindings/containers"
-	docker "github.com/docker/docker/api/types"
+	containerType "github.com/docker/docker/api/types/container"
 	"github.com/funtimecoding/go-library/pkg/errors"
 )
 
@@ -15,7 +15,7 @@ func (c *Client) session(
 		c.context,
 		container,
 		&handlers.ExecCreateConfig{
-			ExecConfig: docker.ExecConfig{
+			ExecOptions: containerType.ExecOptions{
 				Cmd:          command,
 				Tty:          false,
 				AttachStdout: true,
