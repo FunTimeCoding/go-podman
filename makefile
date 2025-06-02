@@ -12,6 +12,7 @@ tool:
 	@GOPROXY=direct go install github.com/funtimecoding/go-library/cmd/goupdate@latest
 
 lint:
+	@golint --fix
 	@golangci-lint run --build-tags "${REMOTE_TAGS}"
 
 test:
