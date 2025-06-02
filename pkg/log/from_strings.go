@@ -1,7 +1,7 @@
 package log
 
 import (
-	"github.com/funtimecoding/go-library/pkg/separator"
+	"github.com/funtimecoding/go-library/pkg/strings/separator"
 	"github.com/funtimecoding/go-library/pkg/strings/split"
 	"strings"
 )
