@@ -1,18 +1,18 @@
 package compose
 
 func (c *Compose) Destroy() {
-	for _, element := range c.containers {
-		if !c.podman.Exists(element) {
+	for _, o := range c.containers {
+		if !c.podman.Exists(o) {
 			continue
 		}
 
-		if c.podman.Running(element) {
-			c.podman.Stop(element)
+		if c.podman.Running(o) {
+			c.podman.Stop(o)
 		}
 
-		if c.podman.Exists(element) {
+		if c.podman.Exists(o) {
 			// If the remove flag was not set, it will be removed now
-			c.podman.Remove(element)
+			c.podman.Remove(o)
 		}
 	}
 }

@@ -3,13 +3,13 @@ package compose
 import "fmt"
 
 func (c *Compose) Status() {
-	for _, element := range c.podman.Pod() {
-		fmt.Printf("Pod: %+v\n", element)
+	for _, o := range c.podman.Pod() {
+		fmt.Printf("Pod: %+v\n", o)
 	}
 
-	for _, element := range c.podman.Container() {
-		fmt.Printf("Container %s: %+v\n", element.Names[0], element)
-		l := c.podman.Execute(element, "ls")
+	for _, o := range c.podman.Container() {
+		fmt.Printf("Container %s: %+v\n", o.Names[0], o)
+		l := c.podman.Execute(o, "ls")
 		output := l.Output.Render()
 
 		if output != "" {

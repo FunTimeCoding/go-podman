@@ -35,13 +35,13 @@ func TestCommand(t *testing.T) {
 	case constant.Darwin:
 		assert.String(
 			t,
-			"ssh://core@127.0.0.1:2000/run/user/501/podman/podman.sock?secure=true",
+			"ssh://root@127.0.0.1:2000/run/podman/podman.sock?secure=true",
 			replacePort(Locator(), 2000),
 		)
 	default:
 		assert.String(
 			t,
-			"ssh://user@127.0.0.1:2000/run/user/1000/podman/podman.sock?secure=true",
+			"ssh://root@127.0.0.1:2000/run/podman/podman.sock?secure=true",
 			replacePort(Locator(), 2000),
 		)
 	}

@@ -6,8 +6,8 @@ import (
 )
 
 func (c *Client) ImageExists(o *container.Container) bool {
-	for _, element := range c.Image() {
-		if slices.Contains(element.Names, o.Name) {
+	for _, i := range c.Image() {
+		if slices.Contains(i.Names, o.Name) {
 			return true
 		}
 	}

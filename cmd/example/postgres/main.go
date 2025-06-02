@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/funtimecoding/go-podman/pkg/compose"
 	"github.com/funtimecoding/go-podman/pkg/container"
+	"time"
 )
 
 const PostgresPassword = "postgres"
@@ -18,4 +19,6 @@ func main() {
 	c := compose.New(Postgres)
 	c.Create()
 	defer c.Destroy()
+
+	time.Sleep(30 * time.Second)
 }

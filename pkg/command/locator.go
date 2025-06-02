@@ -26,6 +26,14 @@ func Locator() string {
 		&result,
 		false,
 	)
+	var defaultConnection Connection
 
-	return fmt.Sprintf("%s?secure=true", result[0].URI)
+	for _, connection := range result {
+		if connection.Default {
+			defaultConnection = connection
+			break
+		}
+	}
+
+	return fmt.Sprintf("%s?secure=true", defaultConnection.URI)
 }

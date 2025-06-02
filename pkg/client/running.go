@@ -8,12 +8,12 @@ import (
 func (c *Client) Running(o *container.Container) bool {
 	var result bool
 
-	for _, element := range c.Container() {
-		if element.State != RunningState {
+	for _, n := range c.Container() {
+		if n.State != RunningState {
 			continue
 		}
 
-		if slices.Contains(element.Names, o.Alias) {
+		if slices.Contains(n.Names, o.Alias) {
 			result = true
 
 			break

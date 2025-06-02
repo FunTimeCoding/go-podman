@@ -12,20 +12,20 @@ func FromStrings(
 ) *Log {
 	l := New()
 
-	for _, element := range split.NewLine(standardOutput) {
-		if element == separator.Unix {
+	for _, i := range split.NewLine(standardOutput) {
+		if i == separator.Unix {
 			continue
 		}
 
-		l.Output.Add(strings.TrimSpace(element))
+		l.Output.Add(strings.TrimSpace(i))
 	}
 
-	for _, element := range split.NewLine(standardError) {
-		if element == separator.Unix {
+	for _, i := range split.NewLine(standardError) {
+		if i == separator.Unix {
 			continue
 		}
 
-		l.Error.Add(strings.TrimSpace(element))
+		l.Error.Add(strings.TrimSpace(i))
 	}
 
 	return l
