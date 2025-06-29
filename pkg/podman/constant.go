@@ -5,6 +5,8 @@ const (
 
 	Command = "podman"
 
+	Image = "image"
+
 	Execute = "exec"
 
 	Machine = "machine"
