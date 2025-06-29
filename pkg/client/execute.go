@@ -9,7 +9,7 @@ import (
 )
 
 func (c *Client) Execute(
-	v entities.ListContainer,
+	v *entities.ListContainer,
 	command ...string,
 ) *log.Log {
 	outputBuffer := &bytes.Buffer{}

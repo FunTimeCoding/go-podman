@@ -3,19 +3,16 @@ package compose
 import "fmt"
 
 func (c *Compose) Log() {
-	for _, o := range c.podman.Container() {
-		fmt.Printf("Container: %s\n", o.Names[0])
-		l := c.podman.Logs(o)
-		output := l.Output.Render()
+	for _, o := range c.podman.Container(false) {
+		fmt.Printf("Container: %s\n", o.Name)
+		l := c.podman.Logs(o.RawList)
 
-		if output != "" {
-			fmt.Println(output)
+		if s := l.Output.Render(); s != "" {
+			fmt.Println(s)
 		}
 
-		errorOutput := l.Error.Render()
-
-		if errorOutput != "" {
-			fmt.Println(errorOutput)
+		if s := l.Error.Render(); s != "" {
+			fmt.Println(s)
 		}
 	}
 }

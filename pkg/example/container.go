@@ -10,7 +10,7 @@ func Container() {
 	c := client.New()
 	f := constant.Format.Raw()
 
-	for _, o := range c.Container2() {
+	for _, o := range c.Container(false) {
 		fmt.Printf("Container: %s\n", o.Format(f))
 	}
 }

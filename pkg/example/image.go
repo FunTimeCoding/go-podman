@@ -11,6 +11,6 @@ func Image() {
 	f := constant.Format
 
 	for _, i := range c.Image2() {
-		fmt.Printf("Image: %+v\n", i.Format(f))
+		fmt.Printf("Image: %s\n", i.Format(f))
 	}
 }

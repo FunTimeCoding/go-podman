@@ -1,6 +1,7 @@
 package container
 
 import (
+	"github.com/containers/podman/v5/libpod/define"
 	"github.com/containers/podman/v5/pkg/domain/entities/types"
 	"time"
 )
@@ -12,7 +13,11 @@ type Container struct {
 	Image         string
 	Version       string
 	CombinedImage string
-	Create        time.Time
+	Restart       string
+	Create        *time.Time
 
-	Raw *types.ListContainer
+	Concern []string
+
+	RawList   *types.ListContainer
+	RawDetail *define.InspectContainerData
 }

@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-func (c *Client) Logs(o entities.ListContainer) *log.Log {
+func (c *Client) Logs(o *entities.ListContainer) *log.Log {
 	var e error
 	outputChannel := make(chan string)
 	errorChannel := make(chan string)

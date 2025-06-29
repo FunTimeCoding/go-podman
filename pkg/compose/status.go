@@ -7,19 +7,16 @@ func (c *Compose) Status() {
 		fmt.Printf("Pod: %+v\n", o)
 	}
 
-	for _, o := range c.podman.Container() {
-		fmt.Printf("Container %s: %+v\n", o.Names[0], o)
-		l := c.podman.Execute(o, "ls")
-		output := l.Output.Render()
+	for _, o := range c.podman.Container(false) {
+		fmt.Printf("Container %s: %+v\n", o.Name, o)
+		l := c.podman.Execute(o.RawList, "ls")
 
-		if output != "" {
-			fmt.Println(output)
+		if s := l.Output.Render(); s != "" {
+			fmt.Println(s)
 		}
 
-		errorOutput := l.Error.Render()
-
-		if errorOutput != "" {
-			fmt.Println(errorOutput)
+		if s := l.Error.Render(); s != "" {
+			fmt.Println(s)
 		}
 	}
 }

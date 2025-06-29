@@ -1,19 +1,16 @@
 package client
 
-import (
-	"github.com/funtimecoding/go-podman/pkg/container"
-	"golang.org/x/exp/slices"
-)
+import "github.com/funtimecoding/go-podman/pkg/container"
 
 func (c *Client) Running(o *container.Container) bool {
 	var result bool
 
-	for _, n := range c.Container() {
-		if n.State != RunningState {
+	for _, n := range c.Container(false) {
+		if !n.Running() {
 			continue
 		}
 
-		if slices.Contains(n.Names, o.Alias) {
+		if n.Name == o.Alias {
 			result = true
 
 			break

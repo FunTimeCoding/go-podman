@@ -15,7 +15,7 @@ func New(v *types.ListContainer) *Container {
 		Image:         image,
 		Version:       version,
 		CombinedImage: v.Image,
-		Create:        v.Created,
-		Raw:           v,
+		Create:        &v.Created,
+		RawList:       v,
 	}
 }
