@@ -12,7 +12,7 @@ func (c *Compose) Destroy() {
 
 		if c.podman.Exists(o) {
 			// If the remove flag was not set, it will be removed now
-			c.podman.Remove(o)
+			c.podman.Remove(o.Alias)
 		}
 	}
 }

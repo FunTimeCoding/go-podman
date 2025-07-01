@@ -1,16 +1,16 @@
-package container
+package image
 
 import (
 	monitorConstant "github.com/funtimecoding/go-library/pkg/monitor/constant"
 	"github.com/funtimecoding/go-library/pkg/monitor/report"
-	"github.com/funtimecoding/go-podman/pkg/check/container/option"
-	"github.com/funtimecoding/go-podman/pkg/client/container"
+	"github.com/funtimecoding/go-podman/pkg/check/image/option"
+	"github.com/funtimecoding/go-podman/pkg/client/image"
 	"github.com/funtimecoding/go-podman/pkg/constant"
 )
 
 func printNotation(
-	v []*container.Container,
-	o *option.Container,
+	v []*image.Image,
+	o *option.Image,
 ) {
 	r := report.New()
 	f := constant.Format
@@ -19,7 +19,7 @@ func printNotation(
 		v,
 		r,
 		o.All,
-		"containers",
+		"images",
 		monitorConstant.PodManPrefix,
 	) {
 		r.AddItem(

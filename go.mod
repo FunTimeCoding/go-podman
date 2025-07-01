@@ -7,9 +7,8 @@ require (
 	github.com/containers/podman/v5 v5.5.2
 	github.com/docker/docker v28.3.0+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/funtimecoding/go-library v0.10.21
+	github.com/funtimecoding/go-library v0.10.24
 	github.com/spf13/viper v1.20.1
-	golang.org/x/exp v0.0.0-20250620022241-b7579e27df2b
 )
 
 require (
@@ -159,6 +158,7 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.yaml.in/yaml/v2 v2.4.2 // indirect
 	golang.org/x/crypto v0.39.0 // indirect
+	golang.org/x/exp v0.0.0-20250620022241-b7579e27df2b // indirect
 	golang.org/x/net v0.41.0 // indirect
 	golang.org/x/sync v0.15.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect

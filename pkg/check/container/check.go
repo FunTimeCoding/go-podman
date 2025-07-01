@@ -11,7 +11,7 @@ import (
 
 func Check(o *option.Container) {
 	c := client.New()
-	autoStart := podman.AutoStart()
+	autoStart := podman.ContainerAutoStart()
 	containers := c.Container(true)
 	var relevant []*container.Container
 

@@ -6,11 +6,13 @@ import (
 )
 
 type Image struct {
-	Identifier   string
-	Name         string
-	Version      string
-	CombinedName string
-	Create       time.Time
+	MonitorIdentifier string
+	Identifier        string
+	Name              string
+	Version           string
+	CombinedName      string
+	Dangling          bool
+	Create            *time.Time
 
 	Raw *types.ImageSummary
 }

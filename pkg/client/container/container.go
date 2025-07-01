@@ -7,14 +7,15 @@ import (
 )
 
 type Container struct {
-	Identifier    string
-	Name          string
-	State         string
-	Image         string
-	Version       string
-	CombinedImage string
-	Restart       string
-	Create        *time.Time
+	MonitorIdentifier string
+	Identifier        string
+	Name              string
+	State             string
+	Image             string
+	Version           string
+	CombinedImage     string
+	Restart           string
+	Create            *time.Time
 
 	Concern []string
 

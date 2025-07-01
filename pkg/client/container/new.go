@@ -1,7 +1,9 @@
 package container
 
 import (
+	"fmt"
 	"github.com/containers/podman/v5/pkg/domain/entities/types"
+	monitorConstant "github.com/funtimecoding/go-library/pkg/monitor/constant"
 	"github.com/funtimecoding/go-library/pkg/strings/split/key_value"
 )
 
@@ -9,6 +11,11 @@ func New(v *types.ListContainer) *Container {
 	image, version := key_value.Colon(v.Image)
 
 	return &Container{
+		MonitorIdentifier: fmt.Sprintf(
+			"%s-%s",
+			monitorConstant.PodManPrefix,
+			v.ID[:12],
+		),
 		Identifier:    v.ID,
 		Name:          v.Names[0],
 		State:         v.State,

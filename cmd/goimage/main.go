@@ -1,30 +1,21 @@
 package main
 
 import (
-	"fmt"
-	"github.com/funtimecoding/go-podman/pkg/client"
-	"github.com/funtimecoding/go-podman/pkg/client/image"
-	"github.com/funtimecoding/go-podman/pkg/constant"
+	"github.com/funtimecoding/go-library/pkg/argument"
+	"github.com/funtimecoding/go-library/pkg/monitor"
+	"github.com/funtimecoding/go-podman/pkg/check/image"
+	"github.com/funtimecoding/go-podman/pkg/check/image/option"
+	"github.com/spf13/viper"
 )
 
 func main() {
-	// TODO: If older version of same image exists, remove it
-	// TODO: Checks all images for updates
-	c := client.New()
-	f := constant.Format
-	byName := make(map[string][]*image.Image)
-
-	for _, i := range c.Image2() {
-		byName[i.Name] = append(byName[i.Name], i)
-	}
-
-	for k, v := range byName {
-		if len(v) > 1 {
-			fmt.Printf("Multiple images with name %s:\n", k)
-
-			for _, i := range v {
-				fmt.Printf("  - %s\n", i.Format(f))
-			}
-		}
-	}
+	monitor.NotationArgument()
+	monitor.AllArgument()
+	monitor.VerboseArgument()
+	argument.ParseBind()
+	o := option.New()
+	o.Notation = viper.GetBool(argument.Notation)
+	o.All = viper.GetBool(argument.All)
+	o.Verbose = viper.GetBool(argument.Verbose)
+	image.Check(o)
 }

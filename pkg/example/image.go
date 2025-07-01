@@ -10,7 +10,7 @@ func Image() {
 	c := client.New()
 	f := constant.Format
 
-	for _, i := range c.Image2() {
+	for _, i := range c.Image() {
 		fmt.Printf("Image: %s\n", i.Format(f))
 	}
 }

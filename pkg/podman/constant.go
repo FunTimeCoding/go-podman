@@ -1,8 +1,9 @@
 package podman
 
 const (
-	LocatorEnvironment   = "PODMAN_LOCATOR"
-	AutoStartEnvironment = "CONTAINER_AUTO_START"
+	LocatorEnvironment            = "PODMAN_LOCATOR"
+	ContainerAutoStartEnvironment = "CONTAINER_AUTO_START"
+	ImageAutoCleanEnvironment     = "IMAGE_AUTO_CLEAN"
 
 	Command = "podman"
 
