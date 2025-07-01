@@ -17,7 +17,7 @@ func (c *Client) Container(enrich bool) []*container.Container {
 	result := container.NewSlice(page)
 
 	if enrich {
-		c.enrichMany(result)
+		c.enrichManyContainer(result)
 	}
 
 	return result

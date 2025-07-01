@@ -6,9 +6,14 @@ import (
 	"github.com/funtimecoding/go-podman/pkg/client/image"
 )
 
-func (c *Client) Image() []*image.Image {
-	result, e := images.List(c.context, &images.ListOptions{})
+func (c *Client) Image(enrich bool) []*image.Image {
+	page, e := images.List(c.context, &images.ListOptions{})
 	errors.PanicOnError(e)
+	result := image.NewSlice(page)
 
-	return image.NewSlice(result)
+	if enrich {
+		c.enrichManyImage(result)
+	}
+
+	return result
 }

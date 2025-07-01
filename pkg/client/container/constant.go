@@ -5,4 +5,6 @@ const (
 
 	Always = "always"
 	No     = "no"
+
+	ShouldRun = "should_run"
 )

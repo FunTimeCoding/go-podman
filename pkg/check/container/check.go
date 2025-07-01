@@ -6,12 +6,11 @@ import (
 	"github.com/funtimecoding/go-podman/pkg/client"
 	"github.com/funtimecoding/go-podman/pkg/client/container"
 	"github.com/funtimecoding/go-podman/pkg/constant"
-	"github.com/funtimecoding/go-podman/pkg/podman"
 )
 
 func Check(o *option.Container) {
 	c := client.New()
-	autoStart := podman.ContainerAutoStart()
+	autoStart(c)
 	containers := c.Container(true)
 	var relevant []*container.Container
 
@@ -35,9 +34,5 @@ func Check(o *option.Container) {
 
 	for _, n := range relevant {
 		fmt.Println(n.Format(f))
-
-		if autoStart && !n.Running() && n.AlwaysRestart() {
-			c.StartName(n.Name)
-		}
 	}
 }
