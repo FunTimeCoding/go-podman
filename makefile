@@ -24,5 +24,8 @@ update:
 update-library:
 	@goupdate --exclusive funtimecoding
 
+install:
+	@gobuild --all --copy-to-bin --build-tags "${REMOTE_TAGS}"
+
 postgres:
 	@go run -tags "${REMOTE_TAGS}" cmd/example/postgres/main.go

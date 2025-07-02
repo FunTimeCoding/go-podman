@@ -17,7 +17,7 @@ type Container struct {
 	Restart           string
 	Create            *time.Time
 
-	Concern []string
+	concern []string
 
 	RawList   *types.ListContainer
 	RawDetail *define.InspectContainerData

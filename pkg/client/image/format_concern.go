@@ -7,11 +7,11 @@ import (
 )
 
 func (i *Image) formatConcern(f *option.Format) string {
-	if len(i.Concern) == 0 {
+	if !i.HasConcerns() {
 		return ""
 	}
 
-	result := join.Comma(i.Concern)
+	result := join.Comma(i.Concerns())
 
 	if f.UseColor {
 		result = console.Yellow("%s", result)

@@ -1,7 +1,7 @@
 package container
 
 import (
-	monitorConstant "github.com/funtimecoding/go-library/pkg/monitor/constant"
+	monitor "github.com/funtimecoding/go-library/pkg/monitor/constant"
 	"github.com/funtimecoding/go-library/pkg/monitor/report"
 	"github.com/funtimecoding/go-podman/pkg/check/container/option"
 	"github.com/funtimecoding/go-podman/pkg/client/container"
@@ -20,11 +20,11 @@ func printNotation(
 		r,
 		o.All,
 		"containers",
-		monitorConstant.PodManPrefix,
+		monitor.PodManPrefix,
 	) {
 		r.AddItem(
 			n.MonitorIdentifier,
-			monitorConstant.WarningLevel,
+			monitor.WarningLevel,
 			n.Format(f),
 			"",
 			n.Create,
