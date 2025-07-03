@@ -11,17 +11,21 @@ import (
 func Check(o *option.Container) {
 	c := client.New()
 	autoStart(c)
-	containers := monitor.OnlyConcerns(c.Container(true), o.All)
+	elements := monitor.OnlyConcerns(c.Container(true), o.All)
 
 	if o.Notation {
-		printNotation(containers, o)
+		printNotation(elements, o)
 
 		return
 	}
 
 	f := constant.Format
 
-	for _, n := range containers {
-		fmt.Println(n.Format(f))
+	for _, e := range elements {
+		fmt.Println(e.Format(f))
+	}
+
+	if len(elements) == 0 {
+		monitor.NoRelevant(Plural)
 	}
 }

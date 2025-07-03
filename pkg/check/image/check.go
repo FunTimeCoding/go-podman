@@ -12,17 +12,21 @@ func Check(o *option.Image) {
 	c := client.New()
 	autoUpdate(c)
 	autoClean(c)
-	images := monitor.OnlyConcerns(c.Image(true), o.All)
+	elements := monitor.OnlyConcerns(c.Image(true), o.All)
 
 	if o.Notation {
-		printNotation(images, o)
+		printNotation(elements, o)
 
 		return
 	}
 
 	f := constant.Format
 
-	for _, i := range images {
-		fmt.Println(i.Format(f))
+	for _, e := range elements {
+		fmt.Println(e.Format(f))
+	}
+
+	if len(elements) == 0 {
+		monitor.NoRelevant(Plural)
 	}
 }

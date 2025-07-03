@@ -15,19 +15,19 @@ func printNotation(
 	r := report.New()
 	f := constant.Format
 
-	for _, n := range report.Trim(
+	for _, e := range report.Trim(
 		v,
 		r,
 		o.All,
-		"images",
+		Plural,
 		monitor.PodManPrefix,
 	) {
 		r.AddItem(
-			n.MonitorIdentifier,
+			e.MonitorIdentifier,
 			monitor.WarningLevel,
-			n.Format(f),
+			e.Format(f),
 			"",
-			n.Create,
+			e.Create,
 		)
 	}
 

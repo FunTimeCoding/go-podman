@@ -5,9 +5,9 @@ go 1.24.4
 require (
 	github.com/containers/common v0.63.1
 	github.com/containers/podman/v5 v5.5.2
-	github.com/docker/docker v28.3.0+incompatible
+	github.com/docker/docker v28.3.1+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/funtimecoding/go-library v0.10.29
+	github.com/funtimecoding/go-library v0.10.31
 	github.com/spf13/viper v1.20.1
 )
 
