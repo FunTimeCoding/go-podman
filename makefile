@@ -29,3 +29,6 @@ install:
 
 postgres:
 	@go run -tags "${REMOTE_TAGS}" cmd/example/postgres/main.go
+
+build-github:
+	@go build -v -tags "${REMOTE_TAGS}" ./...
