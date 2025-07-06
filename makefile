@@ -32,3 +32,6 @@ postgres:
 
 build-github:
 	@go build -v -tags "${REMOTE_TAGS}" ./...
+
+test-github:
+	@go test -v -tags "${REMOTE_TAGS}" ./...
