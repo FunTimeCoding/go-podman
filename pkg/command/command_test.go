@@ -32,11 +32,8 @@ func replacePort(
 }
 
 func TestCommand(t *testing.T) {
-	library.PrintEnvironment()
-	v := runtime.Version()
-
-	if strings.Contains(v, "github.com") {
-		t.Skip("Skip on GitHub Actions")
+	if library.IsGitHubBuild() {
+		t.Skip("Skip on GitHub")
 	}
 
 	switch runtime.GOOS {
