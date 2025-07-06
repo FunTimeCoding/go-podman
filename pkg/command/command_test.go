@@ -1,11 +1,11 @@
 package command
 
 import (
-	"fmt"
 	"github.com/funtimecoding/go-library/pkg/assert"
 	"github.com/funtimecoding/go-library/pkg/errors"
 	"github.com/funtimecoding/go-library/pkg/integers"
 	"github.com/funtimecoding/go-library/pkg/system/constant"
+	"github.com/funtimecoding/go-podman/pkg/library"
 	"net"
 	"net/url"
 	"runtime"
@@ -32,8 +32,8 @@ func replacePort(
 }
 
 func TestCommand(t *testing.T) {
+	library.PrintEnvironment()
 	v := runtime.Version()
-	fmt.Printf("Version: %s\n", v)
 
 	if strings.Contains(v, "github.com") {
 		t.Skip("Skip on GitHub Actions")
