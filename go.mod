@@ -1,13 +1,13 @@
 module github.com/funtimecoding/go-podman
 
-go 1.24.4
+go 1.24.5
 
 require (
 	github.com/containers/common v0.63.1
 	github.com/containers/podman/v5 v5.5.2
-	github.com/docker/docker v28.3.1+incompatible
+	github.com/docker/docker v28.3.2+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/funtimecoding/go-library v0.10.32
+	github.com/funtimecoding/go-library v0.10.35
 	github.com/spf13/viper v1.20.1
 )
 
@@ -24,7 +24,7 @@ require (
 	github.com/blang/semver/v4 v4.0.0 // indirect
 	github.com/charmbracelet/colorprofile v0.2.3-0.20250311203215-f60798e515dc // indirect
 	github.com/charmbracelet/lipgloss v1.1.0 // indirect
-	github.com/charmbracelet/x/ansi v0.8.0 // indirect
+	github.com/charmbracelet/x/ansi v0.9.3 // indirect
 	github.com/charmbracelet/x/cellbuf v0.0.13-0.20250311204145-2c3ea96c31dd // indirect
 	github.com/charmbracelet/x/term v0.2.1 // indirect
 	github.com/chzyer/readline v1.5.1 // indirect
