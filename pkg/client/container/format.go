@@ -8,7 +8,7 @@ import (
 
 func (c *Container) Format(f *option.Format) string {
 	return status.New(f).String(
-		c.Name,
+		c.formatName(f),
 		c.State,
 		c.Image,
 		c.Version,

@@ -8,7 +8,7 @@ import (
 
 func (i *Image) Format(f *option.Format) string {
 	return status.New(f).String(
-		i.Name,
+		i.formatName(f),
 		i.Version,
 		i.Create.Format(time.DateMinute),
 		i.formatConcern(f),
