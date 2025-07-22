@@ -14,7 +14,7 @@ type Image struct {
 	Dangling          bool
 	Create            *time.Time
 
-	Concern []string
+	concern []string
 
 	Raw *types.ImageSummary
 }

@@ -8,8 +8,9 @@ import (
 
 func (v *Volume) Format(f *option.Format) string {
 	return status.New(f).String(
-		v.Identifier,
-		v.Name,
+		v.formatName(f),
 		v.Create.Format(time.DateMinute),
-	).RawList(v.Raw).Format()
+		v.formatSize(f),
+		v.formatConcern(f),
+	).RawList(v.Raw).RawDetail(v.RawDetail).Format()
 }

@@ -1,5 +1,5 @@
 package image
 
 func (i *Image) HasConcerns() bool {
-	return len(i.Concern) > 0
+	return len(i.concern) > 0
 }

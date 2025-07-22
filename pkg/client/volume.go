@@ -6,10 +6,14 @@ import (
 	"github.com/funtimecoding/go-podman/pkg/client/volume"
 )
 
-func (c *Client) Volume() []*volume.Volume {
+func (c *Client) Volume(enrich bool) []*volume.Volume {
 	page, e := volumes.List(c.context, &volumes.ListOptions{})
 	errors.PanicOnError(e)
 	result := volume.NewSlice(page)
+
+	if enrich {
+		c.enrichManyVolume(result)
+	}
 
 	return result
 }

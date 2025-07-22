@@ -6,7 +6,7 @@ import (
 	"github.com/funtimecoding/go-library/pkg/errors"
 )
 
-func (c *Client) Inspect(name string) *define.InspectContainerData {
+func (c *Client) InspectContainer(name string) *define.InspectContainerData {
 	result, e := containers.Inspect(
 		c.context,
 		name,

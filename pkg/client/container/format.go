@@ -11,7 +11,7 @@ func (c *Container) Format(f *option.Format) string {
 		c.formatName(f),
 		c.State,
 		c.Image,
-		c.Version,
+		c.formatVersion(),
 		c.Create.Format(time.DateMinute),
 		c.formatConcern(f),
 	).RawList(c.RawList).RawDetail(c.RawDetail).Format()

@@ -22,9 +22,17 @@ func printNotation(
 		Plural,
 		monitor.PodManPrefix,
 	) {
+		var level string
+
+		if e.HasConcerns() {
+			level = monitor.WarningLevel
+		} else {
+			level = monitor.InformationLevel
+		}
+
 		r.AddItem(
 			e.MonitorIdentifier,
-			monitor.WarningLevel,
+			level,
 			e.Format(f),
 			"",
 			e.Create,

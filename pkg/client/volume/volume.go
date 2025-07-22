@@ -6,8 +6,13 @@ import (
 )
 
 type Volume struct {
-	Identifier string
-	Name       string
-	Create     *time.Time
-	Raw        *types.VolumeListReport
+	MonitorIdentifier string
+	Name              string
+	Create            *time.Time
+
+	Bytes   int64
+	concern []string
+
+	Raw       *types.VolumeListReport
+	RawDetail *types.VolumeConfigResponse
 }
