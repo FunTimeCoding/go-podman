@@ -1,6 +1,6 @@
 package option
 
-type Image struct {
+type Volume struct {
 	Notation bool
 	All      bool
 }

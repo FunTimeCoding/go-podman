@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/funtimecoding/go-library/pkg/argument"
 	"github.com/funtimecoding/go-library/pkg/monitor"
-	"github.com/funtimecoding/go-podman/pkg/check/image"
-	"github.com/funtimecoding/go-podman/pkg/check/image/option"
+	"github.com/funtimecoding/go-podman/pkg/check/volume"
+	"github.com/funtimecoding/go-podman/pkg/check/volume/option"
 	"github.com/spf13/viper"
 )
 
@@ -15,5 +15,5 @@ func main() {
 	o := option.New()
 	o.Notation = viper.GetBool(argument.Notation)
 	o.All = viper.GetBool(argument.All)
-	image.Check(o)
+	volume.Check(o)
 }
