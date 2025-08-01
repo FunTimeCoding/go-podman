@@ -2,6 +2,7 @@ package image
 
 import (
 	monitor "github.com/funtimecoding/go-library/pkg/monitor/constant"
+	item "github.com/funtimecoding/go-library/pkg/monitor/item/constant"
 	"github.com/funtimecoding/go-library/pkg/monitor/report"
 	"github.com/funtimecoding/go-podman/pkg/check/image/option"
 	"github.com/funtimecoding/go-podman/pkg/client/image"
@@ -19,20 +20,20 @@ func printNotation(
 		v,
 		r,
 		o.All,
-		Plural,
-		monitor.PodManPrefix,
+		item.GoImage,
 	) {
-		var level string
+		var s monitor.Severity
 
 		if e.HasConcerns() {
-			level = monitor.WarningLevel
+			s = monitor.Warning
 		} else {
-			level = monitor.InformationLevel
+			s = monitor.Information
 		}
 
 		r.AddItem(
+			item.GoImage,
 			e.MonitorIdentifier,
-			level,
+			s,
 			e.Format(f),
 			"",
 			e.Create,
