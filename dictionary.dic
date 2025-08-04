@@ -1,5 +1,22 @@
 # Names
+funtimecoding
 podman
+shiin
+
+# go-library
+gobuild
+golint
+goupdate
+
+# Task
+cmds
 
 # Go
 GOPROXY
+golangci
+gotest
+gotestsum
+
+# Podman
+graphdriver
+noversion
