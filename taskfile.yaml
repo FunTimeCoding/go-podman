@@ -1,7 +1,7 @@
 ---
 version: '3'
-# Source: https://github.com/containers/podman/blob/v5.5.0/Makefile#L60
 env:
+  # Source: https://github.com/containers/podman/blob/v5.5.0/Makefile#L60
   REMOTE_TAGS: remote exclude_graphdriver_btrfs btrfs_noversion containers_image_openpgp
 tasks:
   default: {cmds: [{task: lint}, {task: test}, {task: build}], silent: true}
