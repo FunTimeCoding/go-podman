@@ -11,7 +11,7 @@ tasks:
   test:
     cmds: ['gotestsum --format standard-quiet -- -tags "$REMOTE_TAGS" ./...']
     silent: true
-  build: {cmds: ['gobuild --all'], silent: true}
+  build: {cmds: ['gobuild --all --build-tags "$REMOTE_TAGS"'], silent: true}
   update: {cmds: [goupdate], silent: true}
   update-library: {cmds: ['goupdate --exclusive funtimecoding'], silent: true}
   tool:
