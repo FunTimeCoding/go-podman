@@ -1,13 +1,13 @@
 module github.com/funtimecoding/go-podman
 
-go 1.24.5
+go 1.24.6
 
 require (
-	github.com/containers/common v0.64.0
+	github.com/containers/common v0.64.1
 	github.com/containers/podman/v5 v5.5.2
 	github.com/docker/docker v28.3.3+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/funtimecoding/go-library v0.10.75
+	github.com/funtimecoding/go-library v0.10.78
 	github.com/spf13/viper v1.20.1
 )
 
@@ -38,11 +38,11 @@ require (
 	github.com/containerd/stargz-snapshotter/estargz v0.16.3 // indirect
 	github.com/containerd/typeurl/v2 v2.2.3 // indirect
 	github.com/containers/buildah v1.40.1 // indirect
-	github.com/containers/image/v5 v5.36.0 // indirect
+	github.com/containers/image/v5 v5.36.1 // indirect
 	github.com/containers/libtrust v0.0.0-20230121012942-c1716e8a8d01 // indirect
 	github.com/containers/ocicrypt v1.2.1 // indirect
 	github.com/containers/psgo v1.9.0 // indirect
-	github.com/containers/storage v1.59.0 // indirect
+	github.com/containers/storage v1.59.1 // indirect
 	github.com/coreos/go-semver v0.3.1 // indirect
 	github.com/coreos/go-systemd/v22 v22.5.1-0.20231103132048-7d375ecc2b09 // indirect
 	github.com/cyberphone/json-canonicalization v0.0.0-20241213102144-19d51d7fe467 // indirect
