@@ -18,9 +18,8 @@ tasks:
     cmds:
     - go install gotest.tools/gotestsum@latest
     - export GOPROXY=direct
-    - go install github.com/funtimecoding/go-library/cmd/gobuild@latest
     - go install github.com/funtimecoding/go-library/cmd/golint@latest
-    - go install github.com/funtimecoding/go-library/cmd/goupdate@latest
+    - go install github.com/funtimecoding/go-library/cmd/gobuild@latest
     - curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/HEAD/install.sh | sh -s -- -b $(go env GOPATH)/bin v2.3.1
     silent: true
   install:
