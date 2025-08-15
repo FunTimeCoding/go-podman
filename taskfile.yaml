@@ -11,7 +11,7 @@ tasks:
   test:
     cmds: ['gotestsum --format standard-quiet -- -tags "$REMOTE_TAGS" ./...']
     silent: true
-  build: {cmds: ['gobuild --all --build-tags "$REMOTE_TAGS"'], silent: true}
+  build: {cmds: ['gobuild --build-tags "$REMOTE_TAGS"'], silent: true}
   update: {cmds: [goupdate], silent: true}
   update-library: {cmds: ['goupdate --exclusive funtimecoding'], silent: true}
   tool:
@@ -24,7 +24,7 @@ tasks:
     - curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/HEAD/install.sh | sh -s -- -b $(go env GOPATH)/bin v2.3.1
     silent: true
   install:
-    cmds: ['gobuild --all --copy-to-bin --build-tags "$REMOTE_TAGS"']
+    cmds: ['gobuild --copy-to-bin --build-tags "$REMOTE_TAGS"']
     silent: true
   postgres:
     cmds: ['go run -tags "$REMOTE_TAGS" cmd/example/postgres/main.go']
