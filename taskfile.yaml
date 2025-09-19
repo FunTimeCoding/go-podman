@@ -5,6 +5,7 @@ env:
   REMOTE_TAGS: remote exclude_graphdriver_btrfs btrfs_noversion containers_image_openpgp
 tasks:
   default: {cmds: [{task: lint}, {task: test}, {task: build}], silent: true}
+  pre-push: {cmds: [{task: lint}, {task: test}], silent: true}
   lint:
     cmds: ['golint --fix', 'golangci-lint run --build-tags "$REMOTE_TAGS"']
     silent: true
