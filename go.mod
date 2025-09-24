@@ -7,7 +7,7 @@ require (
 	github.com/containers/podman/v5 v5.6.1
 	github.com/docker/docker v28.4.0+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/funtimecoding/go-library v0.10.123
+	github.com/funtimecoding/go-library v0.10.141
 	github.com/spf13/viper v1.21.0
 )
 
