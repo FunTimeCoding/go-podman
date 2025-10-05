@@ -4,10 +4,10 @@ go 1.25.1
 
 require (
 	github.com/containers/common v0.64.2
-	github.com/containers/podman/v5 v5.6.1
-	github.com/docker/docker v28.4.0+incompatible
+	github.com/containers/podman/v5 v5.6.2
+	github.com/docker/docker v28.5.0+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/funtimecoding/go-library v0.10.147
+	github.com/funtimecoding/go-library v0.10.153
 	github.com/spf13/viper v1.21.0
 )
 
@@ -37,7 +37,7 @@ require (
 	github.com/containerd/platforms v1.0.0-rc.1 // indirect
 	github.com/containerd/stargz-snapshotter/estargz v0.16.3 // indirect
 	github.com/containerd/typeurl/v2 v2.2.3 // indirect
-	github.com/containers/buildah v1.41.4 // indirect
+	github.com/containers/buildah v1.41.5 // indirect
 	github.com/containers/image/v5 v5.36.2 // indirect
 	github.com/containers/libtrust v0.0.0-20230121012942-c1716e8a8d01 // indirect
 	github.com/containers/ocicrypt v1.2.1 // indirect
@@ -166,9 +166,9 @@ require (
 	golang.org/x/text v0.29.0 // indirect
 	golang.org/x/time v0.13.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250707201910-8d1bb00bc6a7 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250908214217-97024824d090 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250929231259-57b25ae835d4 // indirect
 	google.golang.org/grpc v1.75.1 // indirect
-	google.golang.org/protobuf v1.36.9 // indirect
+	google.golang.org/protobuf v1.36.10 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect

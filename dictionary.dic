@@ -12,7 +12,6 @@ goupdate
 cmds
 
 # Go
-GOPROXY
 golangci
 gotest
 gotestsum
