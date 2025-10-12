@@ -7,7 +7,7 @@ require (
 	github.com/containers/podman/v5 v5.6.2
 	github.com/docker/docker v28.5.1+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/funtimecoding/go-library v0.10.166
+	github.com/funtimecoding/go-library v0.10.168
 	github.com/spf13/viper v1.21.0
 )
 
@@ -124,7 +124,7 @@ require (
 	github.com/sagikazarmark/locafero v0.11.0 // indirect
 	github.com/sanity-io/litter v1.5.8 // indirect
 	github.com/secure-systems-lab/go-securesystemslib v0.9.0 // indirect
-	github.com/sergi/go-diff v1.3.2-0.20230802210424-5b0b94c5c0d3 // indirect
+	github.com/sergi/go-diff v1.4.0 // indirect
 	github.com/sigstore/fulcio v1.6.6 // indirect
 	github.com/sigstore/protobuf-specs v0.4.1 // indirect
 	github.com/sigstore/sigstore v1.9.5 // indirect
