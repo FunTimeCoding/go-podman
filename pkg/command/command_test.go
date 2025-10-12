@@ -3,9 +3,9 @@ package command
 import (
 	"github.com/funtimecoding/go-library/pkg/assert"
 	"github.com/funtimecoding/go-library/pkg/errors"
+	"github.com/funtimecoding/go-library/pkg/github/action"
 	"github.com/funtimecoding/go-library/pkg/integers"
 	"github.com/funtimecoding/go-library/pkg/system/constant"
-	"github.com/funtimecoding/go-podman/pkg/library"
 	"net"
 	"net/url"
 	"runtime"
@@ -32,7 +32,7 @@ func replacePort(
 }
 
 func TestCommand(t *testing.T) {
-	if library.IsGitHubBuild() {
+	if action.IsActionRun() {
 		t.Skip("Skip on GitHub")
 	}
 

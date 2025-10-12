@@ -1,7 +1,7 @@
 package main
 
-import "github.com/funtimecoding/go-podman/pkg/library"
+import "github.com/funtimecoding/go-library/pkg/system"
 
 func main() {
-	library.PrintEnvironment()
+	system.PrintEnvironment()
 }
