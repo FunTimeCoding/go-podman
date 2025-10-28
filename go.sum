@@ -143,6 +143,8 @@ github.com/funtimecoding/go-library v0.10.195 h1:d9lM1OcXdXPYvfuGhKjNi+z0QJFCfOQ
 github.com/funtimecoding/go-library v0.10.195/go.mod h1:H8lTx9Zl6odfiDah2my0vDMNpixs24O1OxnhO5CFLUQ=
 github.com/funtimecoding/go-library v0.10.196 h1:qZQl4wsOt7rLJQsLPFZa+q98Vv/9pNi0TGN/RvlW/7U=
 github.com/funtimecoding/go-library v0.10.196/go.mod h1:H8lTx9Zl6odfiDah2my0vDMNpixs24O1OxnhO5CFLUQ=
+github.com/funtimecoding/go-library v0.10.197 h1:yfqNfLJjfZHzKdFVmpmTthNYHfi2E3Bw4zgkp9wqJ2U=
+github.com/funtimecoding/go-library v0.10.197/go.mod h1:ymPAPCFVURSRzmBXeVhqWeuUGKnt+BTjY57ziUEOiPE=
 github.com/gliderlabs/ssh v0.3.8 h1:a4YXD1V7xMF9g5nTkdfnja3Sxy1PVDCj1Zg4Wb8vY6c=
 github.com/gliderlabs/ssh v0.3.8/go.mod h1:xYoytBv1sV0aL3CavoDuJIQNURXkkfPA/wxQ1pL1fAU=
 github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 h1:+zs/tPmkDkHx3U66DAb0lQFJrpS6731Oaa12ikc+DiI=
