@@ -5,7 +5,7 @@ go 1.25.3
 require (
 	github.com/containers/common v0.64.2
 	github.com/containers/podman/v5 v5.6.2
-	github.com/docker/docker v28.5.1+incompatible
+	github.com/docker/docker v28.5.2+incompatible
 	github.com/docker/go-units v0.5.0
 	github.com/funtimecoding/go-library v0.10.202
 	github.com/spf13/viper v1.21.0
