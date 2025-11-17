@@ -1,13 +1,13 @@
 package client
 
 import (
-	"github.com/containers/common/libnetwork/types"
 	"github.com/containers/podman/v5/pkg/bindings/containers"
 	"github.com/containers/podman/v5/pkg/domain/entities"
 	"github.com/containers/podman/v5/pkg/machine/ignition"
 	"github.com/containers/podman/v5/pkg/specgen"
 	"github.com/funtimecoding/go-library/pkg/errors"
 	"github.com/funtimecoding/go-podman/pkg/container"
+	"go.podman.io/common/libnetwork/types"
 )
 
 func (c *Client) Create(
