@@ -6,7 +6,7 @@ require (
 	github.com/containers/podman/v5 v5.7.0
 	github.com/docker/docker v28.5.2+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/funtimecoding/go-library v0.10.219
+	github.com/funtimecoding/go-library v0.10.220
 	github.com/spf13/viper v1.21.0
 	go.podman.io/common v0.66.0
 )
@@ -152,7 +152,6 @@ require (
 	go.yaml.in/yaml/v2 v2.4.3 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	golang.org/x/crypto v0.45.0 // indirect
-	golang.org/x/exp v0.0.0-20250620022241-b7579e27df2b // indirect
 	golang.org/x/mod v0.30.0 // indirect
 	golang.org/x/net v0.47.0 // indirect
 	golang.org/x/sync v0.18.0 // indirect
