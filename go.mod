@@ -6,7 +6,7 @@ require (
 	github.com/containers/podman/v5 v5.7.0
 	github.com/docker/docker v28.5.2+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/funtimecoding/go-library v0.10.221
+	github.com/funtimecoding/go-library v0.10.222
 	github.com/spf13/viper v1.21.0
 	go.podman.io/common v0.66.0
 )
@@ -27,7 +27,8 @@ require (
 	github.com/charmbracelet/x/cellbuf v0.0.13-0.20250311204145-2c3ea96c31dd // indirect
 	github.com/charmbracelet/x/term v0.2.1 // indirect
 	github.com/chzyer/readline v1.5.1 // indirect
-	github.com/clipperhouse/uax29/v2 v2.2.0 // indirect
+	github.com/clipperhouse/stringish v0.1.1 // indirect
+	github.com/clipperhouse/uax29/v2 v2.3.0 // indirect
 	github.com/cloudflare/circl v1.6.1 // indirect
 	github.com/containerd/errdefs v1.0.0 // indirect
 	github.com/containerd/errdefs/pkg v0.3.0 // indirect
