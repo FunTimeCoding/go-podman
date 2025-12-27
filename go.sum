@@ -120,8 +120,8 @@ github.com/frankban/quicktest v1.14.6/go.mod h1:4ptaffx2x8+WTWXmUCuVU6aPUX1/Mz7z
 github.com/fsnotify/fsnotify v1.6.0/go.mod h1:sl3t1tCWJFWoRz9R8WJCbQihKKwmorjAbSClcnxKAGw=
 github.com/fsnotify/fsnotify v1.9.0 h1:2Ml+OJNzbYCTzsxtv8vKSFD9PbJjmhYF14k/jKC7S9k=
 github.com/fsnotify/fsnotify v1.9.0/go.mod h1:8jBTzvmWwFyi3Pb8djgCCO5IBqzKJ/Jwo8TRcHyHii0=
-github.com/funtimecoding/go-library v0.10.237 h1:kclrm3/u8gXLfcqTMy2z7bfoJrnrQSkCgZrrTNYHH3A=
-github.com/funtimecoding/go-library v0.10.237/go.mod h1:OkFyatM/4b3Nmi0y1imh3G2MdMd1rwr/SSDeg4IK1lM=
+github.com/funtimecoding/go-library v0.10.240 h1:EAwvG3cpjbgulXOkYuY81uYeb0SSLX8u1rRahXEGeR0=
+github.com/funtimecoding/go-library v0.10.240/go.mod h1:7dY6I1Jy8bmz1bcXay0r72OdIXC0+Amip36TCF1oKqc=
 github.com/gliderlabs/ssh v0.3.8 h1:a4YXD1V7xMF9g5nTkdfnja3Sxy1PVDCj1Zg4Wb8vY6c=
 github.com/gliderlabs/ssh v0.3.8/go.mod h1:xYoytBv1sV0aL3CavoDuJIQNURXkkfPA/wxQ1pL1fAU=
 github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 h1:+zs/tPmkDkHx3U66DAb0lQFJrpS6731Oaa12ikc+DiI=
