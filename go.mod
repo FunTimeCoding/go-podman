@@ -1,12 +1,12 @@
 module github.com/funtimecoding/go-podman
 
-go 1.25.5
+go 1.25.6
 
 require (
 	github.com/containers/podman/v5 v5.7.1
 	github.com/docker/docker v28.5.2+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/funtimecoding/go-library v0.10.260
+	github.com/funtimecoding/go-library v0.10.261
 	github.com/spf13/viper v1.21.0
 	go.podman.io/common v0.66.1
 )
@@ -123,7 +123,7 @@ require (
 	github.com/sigstore/fulcio v1.7.1 // indirect
 	github.com/sigstore/protobuf-specs v0.4.1 // indirect
 	github.com/sigstore/sigstore v1.9.5 // indirect
-	github.com/sirupsen/logrus v1.9.4-0.20230606125235-dd1b4c2e81af // indirect
+	github.com/sirupsen/logrus v1.9.4 // indirect
 	github.com/skeema/knownhosts v1.3.2 // indirect
 	github.com/smallstep/pkcs7 v0.1.1 // indirect
 	github.com/sourcegraph/conc v0.3.1-0.20240121214520-5f936abd7ae8 // indirect
