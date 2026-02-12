@@ -3,7 +3,7 @@ module github.com/funtimecoding/go-podman
 go 1.26.0
 
 require (
-	github.com/containers/podman/v5 v5.7.1
+	github.com/containers/podman/v5 v5.8.0
 	github.com/docker/docker v28.5.2+incompatible
 	github.com/docker/go-units v0.5.0
 	github.com/funtimecoding/go-library v0.10.284
@@ -37,7 +37,7 @@ require (
 	github.com/containerd/log v0.1.0 // indirect
 	github.com/containerd/platforms v1.0.0-rc.1 // indirect
 	github.com/containerd/stargz-snapshotter/estargz v0.17.0 // indirect
-	github.com/containers/buildah v1.42.2 // indirect
+	github.com/containers/buildah v1.43.0 // indirect
 	github.com/containers/libtrust v0.0.0-20230121012942-c1716e8a8d01 // indirect
 	github.com/containers/ocicrypt v1.2.1 // indirect
 	github.com/containers/psgo v1.9.1-0.20250826150930-4ae76f200c86 // indirect
