@@ -8,7 +8,7 @@ require (
 	github.com/docker/go-units v0.5.0
 	github.com/funtimecoding/go-library v0.10.358
 	github.com/spf13/viper v1.21.0
-	go.podman.io/common v0.67.0
+	go.podman.io/common v0.67.1
 )
 
 require (
@@ -150,7 +150,7 @@ require (
 	go.opentelemetry.io/otel v1.42.0 // indirect
 	go.opentelemetry.io/otel/metric v1.42.0 // indirect
 	go.opentelemetry.io/otel/trace v1.42.0 // indirect
-	go.podman.io/image/v5 v5.39.1 // indirect
+	go.podman.io/image/v5 v5.39.2 // indirect
 	go.podman.io/storage v1.62.0 // indirect
 	go.yaml.in/yaml/v2 v2.4.3 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
