@@ -1,12 +1,12 @@
 module github.com/funtimecoding/go-podman
 
-go 1.26.1
+go 1.26.2
 
 require (
 	github.com/containers/podman/v5 v5.8.1
 	github.com/docker/docker v28.5.2+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/funtimecoding/go-library v0.10.361
+	github.com/funtimecoding/go-library v0.10.364
 	github.com/spf13/viper v1.21.0
 	go.podman.io/common v0.67.1
 )
@@ -59,7 +59,7 @@ require (
 	github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 // indirect
 	github.com/go-git/go-billy/v5 v5.8.0 // indirect
 	github.com/go-git/go-git/v5 v5.17.2 // indirect
-	github.com/go-jose/go-jose/v4 v4.1.3 // indirect
+	github.com/go-jose/go-jose/v4 v4.1.4 // indirect
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-openapi/errors v0.22.7 // indirect
