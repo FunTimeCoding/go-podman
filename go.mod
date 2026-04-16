@@ -6,7 +6,7 @@ require (
 	github.com/containers/podman/v5 v5.8.2
 	github.com/docker/docker v28.5.2+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/funtimecoding/go-library v0.10.377
+	github.com/funtimecoding/go-library v0.10.379
 	github.com/spf13/viper v1.21.0
 	go.podman.io/common v0.67.1
 )
@@ -81,7 +81,7 @@ require (
 	github.com/jinzhu/copier v0.4.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/kevinburke/ssh_config v1.4.0 // indirect
-	github.com/klauspost/compress v1.18.3 // indirect
+	github.com/klauspost/compress v1.18.5 // indirect
 	github.com/klauspost/pgzip v1.2.6 // indirect
 	github.com/kr/fs v0.1.0 // indirect
 	github.com/letsencrypt/boulder v0.0.0-20240620165639-de9c06129bec // indirect
@@ -152,7 +152,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.43.0 // indirect
 	go.podman.io/image/v5 v5.39.2 // indirect
 	go.podman.io/storage v1.62.0 // indirect
-	go.yaml.in/yaml/v2 v2.4.3 // indirect
+	go.yaml.in/yaml/v2 v2.4.4 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	golang.org/x/crypto v0.50.0 // indirect
 	golang.org/x/mod v0.35.0 // indirect
